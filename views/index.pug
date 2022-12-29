@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em FragranceStore], a very basic Express website.
+
+  h3 Dynamic website data
+
+  if error
+    p Error getting dynamic content.
+  else
+
+    ul
+      li #[strong Items:] !{data.book_count}
+      li #[strong Categorys:] !{data.genre_count}
